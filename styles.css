@@ -1,0 +1,59 @@
+/* ================= Menu Flutuante de Navegação ================= */
+.menu-flutuante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.85); /* Fundo branco levemente transparente */
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(4, 56, 115, 0.2);
+    backdrop-filter: blur(8px); /* Efeito de vidro moderno */
+    border: 1px solid rgba(4, 56, 115, 0.1);
+    z-index: 9999; /* Garante que fique sempre por cima de tudo */
+}
+
+.btn-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: #043873; /* Azul do Fluxo Digital */
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn-nav:hover {
+    background: #4F9CF9; /* Azul vibrante no hover */
+    transform: translateY(-4px); /* Efeito de "pulo" ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(79, 156, 249, 0.4);
+}
+
+.btn-nav.home {
+    background: #27ae60; /* Verde para o botão de início */
+}
+
+
+
+    /* Remove as margens, esconde barras de rolagem e adiciona um fundo azul escuro a combinar */
+    body { 
+        
+        overflow: hidden; 
+        background: #010b2b; /* Azul escuro que se funde com o fundo da sua imagem */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Garante que a imagem cabe no ecrã inteiro sem cortar nada */
+    .img-integrantes { 
+        width: 100%; 
+        object-fit: fill; 
+        display: block; 
+    }
